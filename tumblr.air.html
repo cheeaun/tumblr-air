@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr" lang="en">
+<head>
+<title>tumblr.air</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="tumblr.air.css" />
+<script type="application/x-shockwave-flash" src="scripts/servicemonitor.swf"></script>
+<script type="text/javascript" src="scripts/AIRAliases.js"></script>
+<script type="text/javascript" src="scripts/mootools.js"></script>
+<script type="text/javascript" src="scripts/tumblr.air.js"></script>
+</head>
+<body>
+<div id="window-title" onmousedown="nativeWindow.startMove()">
+	<div class="window-title-buttons">
+	<a id="close-button" title="Close" onclick="close_window();"></a>
+	<a id="minimize-button" title="Minimize" onclick="nativeWindow.minimize()"></a>
+	</div>
+	<h1>tumblr.air</h1>
+</div>
+<div id="window-content">
+
+<div id="login-panel">
+<div class="input-part"><label for="email">Email</label> <input type="text" id="email" value="" /></div>
+<div class="input-part"><label for="password">Password</label> <input type="password" id="password" /></div>
+<div class="panel-bottom">
+<label for="remember-email-password"><input type="checkbox" id="remember-email-password" /> Remember email and password</label>
+<span id="login-error"></span>
+<button id="login-button">Login</button>
+</div>
+</div>
+
+<div id="dashboard-panel">
+	<h2 id="tumblr-site">&nbsp;</h2>
+
+	<a id="regular-button" href="#regular-panel" title="Add a Text Post">Text</a>
+	<a id="photo-button" href="#photo-panel" title="Upload a Photo">Photo</a>
+	<a id="quote-button" href="#quote-panel" title="Add a Quote">Quote</a>
+	<a id="link-button" href="#link-panel" title="Add a Link">Link</a>
+	<a id="conversation-button" href="#conversation-panel" title="Add a Chat Post">Chat</a>
+	<a id="audio-button" href="#audio-panel" title="Add an Audio Post">Audio</a>
+	<a id="video-button" href="#video-panel" title="Add a Video">Video</a>
+	<div class="panel-bottom">
+	<button id="logout-button">Logout</button>
+	</div>
+</div>
+
+<div id="regular-panel">
+	<form>
+	<h2>Add a Text Post</h2>
+	<div class="input-part"><label for="regular-title">Title <em>(optional)</em></label> <input type="text" id="regular-title" value="" /></div>
+	<div class="textarea-part"><label for="regular-body">Body</label> <textarea id="regular-body"></textarea></div>
+	<div class="panel-bottom">
+		<button class="post-button">Create post</button>
+		<button class="cancel-button">Cancel</button>
+	</div>
+	</form>
+</div>
+
+<div id="photo-panel">
+	<form>
+	<h2>Upload a Photo</h2>
+	<div class="input-part"><label for="photo-source">Photo URL</label> <input type="text" id="photo-source" value="" /></div>
+	<div class="input-part"><label for="photo-data">Photo</label> <input type="file" id="photo-data" value="" /></div>
+	<div class="textarea-part"><label for="photo-caption">Caption <em>(optional)</em></label> <textarea id="photo-caption"></textarea></div>
+	<div class="panel-bottom">
+		<button class="post-button">Create post</button>
+		<button class="cancel-button">Cancel</button>
+	</div>
+	</form>
+</div>
+
+<div id="quote-panel">
+	<form>
+	<h2>Add a Quote</h2>
+	<div class="textarea-part"><label for="quote">Quote</label> <textarea id="quote"></textarea></div>
+	<div class="textarea-part"><label for="quote-source">Source <em>(optional)</em></label> <textarea id="quote-source"></textarea></div>
+	<div class="panel-bottom">
+		<button class="post-button">Create post</button>
+		<button class="cancel-button">Cancel</button>
+	</div>
+	</form>
+</div>
+
+<div id="link-panel">
+	<form>
+	<h2>Add a Link</h2>
+	<div class="input-part"><label for="link-name">Name <em>(optional)</em></label> <input type="text" id="link-name" value="" /></div>
+	<div class="input-part"><label for="link-url">URL</label> <input type="text" id="link-url" value="" /></div>
+	<div class="textarea-part"><label for="link-description">Description <em>(optional)</em></label> <textarea id="link-description"></textarea></div>
+	<div class="panel-bottom">
+		<button class="post-button">Create post</button>
+		<button class="cancel-button">Cancel</button>
+	</div>
+	</form>
+</div>
+
+<div id="conversation-panel">
+	<form>
+	<h2>Add a Chat Post</h2>
+	<div class="input-part"><label for="conversation-title">Title <em>(optional)</em></label> <input type="text" id="conversation-title" value="" /></div>
+	<div class="textarea-part"><label for="conversation">Dialoque</label> <textarea id="conversation"></textarea></div>
+	<div class="panel-bottom">
+		<button class="post-button">Create post</button>
+		<button class="cancel-button">Cancel</button>
+	</div>
+	</form>
+</div>
+
+<div id="video-panel">
+	<form>
+	<h2>Add a Video</h2>
+	<div class="textarea-part"><label for="video-embed">Embed a video</label> <textarea id="video-embed"></textarea></div>
+	<div class="input-part"><label for="video-data">Upload a video</label> <input type="file" id="video-data" value="" /></div>
+	<div class="input-part"><label for="video-title">Title <em>(optional)</em></label> <input type="text" id="video-title" value="" /></div>
+	<div class="textarea-part"><label for="video-caption">Caption <em>(optional)</em></label> <textarea id="photo-video"></textarea></div>
+	<div class="panel-bottom">
+		<button class="post-button">Create post</button>
+		<button class="cancel-button">Cancel</button>
+	</div>
+	</form>
+</div>
+
+<div id="audio-panel">
+	<form>
+	<h2>Add an Audio Post</h2>
+	<div class="input-part"><label for="audio-data">Audio file</label> <input type="file" id="audio-data" value="" /></div>
+	<div class="textarea-part"><label for="audio-description">Description <em>(optional)</em></label> <textarea id="audio-description"></textarea></div>
+	<div class="panel-bottom">
+		<button class="post-button">Create post</button>
+		<button class="cancel-button">Cancel</button>
+	</div>
+	</form>
+</div>
+
+</div>
+</body>
+</html>
