@@ -1,0 +1,205 @@
+body{
+	font: 12px/1em arial,helvetica,sans-serif;
+	width: 500px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	cursor: default;
+}
+p,h1,h2,a,button,label,span{
+	-webkit-user-select: ignore; /*Disable cursor selection*/
+}
+#window-title{
+	color: #000;
+	background: transparent url(images/tumblr.air.bg.png) no-repeat;
+	padding: 35px 35px 5px;
+}
+.window-title-buttons{
+	margin-right: -5px;
+}
+.window-title-buttons a{
+	float: right;
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin: -10px 0 0 5px;
+	background-color: green;
+	background: transparent url(images/tumblr.air.window-buttons.png);
+}
+#minimize-button:hover{
+	background-position: bottom left;
+}
+#close-button{
+	background-position: top right;
+}
+#close-button:hover{
+	background-position: bottom right;
+}
+#window-title h1{
+	font-size: 34px;
+	color: #3E4D5C;
+	background-color: transparent;
+	margin: 0;
+	padding: 0;
+	line-height: 1em;
+}
+#version{
+	font-size: 14px;
+	font-weight: normal;
+	letter-spacing: -.1em;
+}
+#window-content{
+	color: #000;
+	background: transparent url(images/tumblr.air.bg.png) no-repeat bottom;
+	padding: 5px 35px 35px;
+}
+p{
+	margin: 0;
+	padding: 0;
+}
+#login-error{
+	margin-top: .5em;
+	color: red;
+	background-color: transparent;
+	font-weight: bold;
+}
+button{
+	font-size: 20px;
+	padding: 5px 40px;
+}
+input[type="text"],input[type="password"],input[type="file"],textarea{
+	border: 1px solid #ccc;
+	width: 415px;
+	padding: 5px;
+	font-size: 20px;
+	background: #fff url(images/input.bg.png) repeat-x;
+}
+input[type="text"]:focus,input[type="password"]:focus,textarea:focus{
+	border-color: #8A9EB4;
+}
+input[type="checkbox"]{
+	vertical-align: text-bottom;
+}
+label{
+	display: block;
+	margin-top: .5em;
+	line-height: 2em;
+}
+textarea{
+	height: 6em;
+}
+.panel-bottom{
+	margin-top: 5px;
+	text-align: right;
+	clear: both;
+}
+
+#login-panel,
+#dashboard-panel,
+#regular-panel,
+#photo-panel,
+#quote-panel,
+#link-panel,
+#conversation-panel,
+#video-panel,
+#audio-panel{
+	overflow: hidden;
+}
+
+#login-panel>.input-part:first-child{
+	margin-right: 30px;
+}
+
+#login-panel .input-part,
+#login-panel .input-part input{
+	float: left;
+	width: 190px;
+	margin-bottom: 5px;
+}
+
+label[for="remember-email-password"]{
+	line-height: 1.4em;
+}
+
+h2{
+	padding: 0;
+	color: #8A9EB4;
+	background-color: transparent;
+	margin: 5px 0;
+}
+
+#dashboard-panel a{
+	cursor: pointer;
+	display: inline-block;
+	width: 58px;
+	height: 60px;
+	text-indent: -999em;
+}
+
+#regular-button{
+	background-image: url(images/regular-button.png);
+}
+
+#photo-button{
+	background-image: url(images/photo-button.png);
+}
+
+#quote-button{
+	background-image: url(images/quote-button.png);
+}
+
+#link-button{
+	background-image: url(images/link-button.png);
+}
+
+#conversation-button{
+	background-image: url(images/conversation-button.png);
+}
+
+#audio-button{
+	background-image: url(images/audio-button.png);
+}
+
+#video-button{
+	background-image: url(images/video-button.png);
+}
+
+#regular-panel{
+	background: transparent url(images/regular-button-small.png) no-repeat top right;
+}
+
+#photo-panel{
+	background: transparent url(images/photo-button-small.png) no-repeat top right;
+}
+
+#quote-panel{
+	background: transparent url(images/quote-button-small.png) no-repeat top right;
+}
+
+#link-panel{
+	background: transparent url(images/link-button-small.png) no-repeat top right;
+}
+
+#conversation-panel{
+	background: transparent url(images/conversation-button-small.png) no-repeat top right;
+}
+
+#audio-panel{
+	background: transparent url(images/audio-button-small.png) no-repeat top right;
+}
+
+#video-panel{
+	background: transparent url(images/video-button-small.png) no-repeat top right;
+}
+
+.tool-tip{
+	padding: 5px 7px;
+	color: #fff;
+	background-color: #3E4D5C;
+	opacity: .9;
+	-webkit-border-radius: 3px;
+}
+
+.tool-title{
+	display: none;
+}
